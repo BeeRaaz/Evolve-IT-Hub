@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 HomeWork 2</title>
+    <style>
+      * {
+        color: #fff;
+      }
+
+      input {
+        margin-bottom: 20px;
+      }
+
+      select {
+        color: black;
+        margin-bottom: 20px;
+      }
+
+      #addressBox {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      #qualificationContainer {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      #hobbiesContainer {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      #buttonContainer {
+        margin-left: 400px;
+      }
+
+      button {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="text-align: center; color: blueviolet; text-decoration: underline"
+    >
+      STUDENT REGISTRATION FORM
+    </h1>
+    <form action="" style="background-color: blueviolet; padding: 20px">
+      <label for="fname" style="margin-right: 50px">FIRST NAME</label>
+      <input type="text" id="fname" />
+      <span>(max 30 characters a-z and A-Z)</span> <br />
+
+      <label for="lname" style="margin-right: 53px">LAST NAME</label>
+      <input type="text" id="lname" />
+      <span>(max 30 characters a-z and A-Z)</span> <br />
+
+      <label for="dob" style="margin-right: 30px">DATE OF BIRTH</label>
+      <select name="" id="dob">
+        <option value="day">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <select name="" id="dob">
+        <option value="month">Month</option>
+      </select>
+      <select name="" id="dob">
+        <option value="year">Year</option>
+      </select>
+      <br />
+
+      <label for="email" style="margin-right: 95px">EMAIL</label>
+      <input type="email" name="email" id="email" /> <br />
+
+      <label for="number" style="margin-right: 13px">MOBILE NUMBER</label>
+      <input type="number" name="contactnumber" id="number" />
+      <span>(10 digit number)</span> <br />
+
+      <label for="gender" style="margin-right: 85px">GENDER</label>
+      Male <input type="radio" name="gender" value="male" /> 
+      Female <input type="radio" name="gender" value="female" /> <br />
+
+      <div id="addressBox">
+        <label for="address" style="margin-right: 78px">ADDRESS</label>
+        <textarea name="address" id="address" cols="40" rows="5"></textarea>
+      </div>
+
+      <label for="city" style="margin-right: 110px">CITY</label>
+      <input type="text" id="city" />
+      <span>(max 30 characters a-z and A-Z)</span> <br />
+
+      <label for="pincode" style="margin-right: 75px">PIN CODE</label>
+      <input type="number" id="pincode" /> <span>(6 digit number)</span> <br />
+
+      <label for="state" style="margin-right: 102px">STATE</label>
+      <input type="text" id="state" />
+      <span>(max 30 characters a-z and A-Z)</span> <br />
+
+      <label for="country" style="margin-right: 74px">COUNTRY</label>
+      <input type="text" id="country" /> <br />
+
+      <div id="hobbiesContainer">
+        <label for="hobbies" style="margin-right: 87px">HOBBIES</label>
+        <div id="hobbyOptionContainer">
+        Drawing <input type="checkbox" id="hobbies" value="drawing" /> 
+        Singing <input type="checkbox" id="hobbies" value="singing" /> 
+        Dancing <input type="checkbox" id="hobbies" value="dancing" /> 
+        Sketchingm<input type="checkbox" id="hobbies" value="sketching" /> <br />
+        Others <input type="checkbox" id="hobbies" value="others"/>
+        <input type="text" placeholder="if others please specify" /> 
+        </div>
+      </div>
+      
+      
+      <div id="qualificationContainer">
+        <label for="qualification" style="margin-right: 35px">QUALIFICATION</label>
+        <table>
+          <thead>
+            <tr>
+              <th>S.N.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="number" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="number" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="number" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="number" /></td>
+            </tr>
+          </tbody>
+          <tfoot style="text-align: center;">
+            <tr>
+                <td></td>
+                <td></td>
+                <td>(10 char max)</td>
+                <td>(upto 2 decimal)</td>
+                <td></td>
+            </tr>
+        </tfoot>
+        </table>
+      </div> <br>
+
+      <label for="courses" style="margin-right: 57px">COURSES <br> APPLIED FOR</label>
+      BCA <input type="radio" value="bca">
+      B.Com <input type="radio" value="bcom">
+      B.SC <input type="radio" value="bsc">
+      BA <input type="radio" value="ba">
+
+
+      <div id="buttonContainer">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      
+    </form>
+  </body>
+</html>
